@@ -21,7 +21,7 @@ class SearchableMovieReviewsContainer extends React.Component{
     componentDidMount(){
       fetch (URL)
       .then(response => response.json())
-      .then(searchableMovieReviewsData => this.setState({reviews: searchableMovieReviewsData}))
+      .then(searchableMovieReviewsData => this.setState({reviews:searchableMovieReviewsData}))
   }
   render() {
     return <MovieReviews   reviews={this.state.reviews} />
