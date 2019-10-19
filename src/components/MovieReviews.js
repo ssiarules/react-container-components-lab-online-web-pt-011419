@@ -11,7 +11,5 @@ const Review = ({headline, display_title, summary_short}) =>{
 }
 
  MovieReviews = () => {
-   
- }
-  
 
+ }
