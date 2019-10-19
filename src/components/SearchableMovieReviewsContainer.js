@@ -21,7 +21,7 @@ class SearchableMovieReviewsContainer extends React.Component{
     componentDidMount(){
       fetch ('https://api.nytimes.com/svc/movies/v2/reviews/all.json?api-key=${NYT_API_KEY}')
       .then(response => response.json())
-      .then(searchableMovieReviewsData => this.setState({reviews: searchableMovieReviewsData}{searchTerm:searchableMovieReviewsData}))
+      .then(searchableMovieReviewsData => this.setState({reviews: searchableMovieReviewsData}))
   }
   render() {
     return <MovieReviews   reviews={this.state.latestMovieReviews} />
