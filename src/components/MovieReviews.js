@@ -10,6 +10,10 @@ const Review = ({headline, display_title, summary_short}) =>{
   )
 }
 
- MovieReviews = () => {
-
+ const MovieReviews = ({reviews}) => {
+   return(
+     <div className='review-list'>
+      {reviews.map(Review)}
+      </div>
+   )
  }
