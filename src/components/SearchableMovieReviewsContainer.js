@@ -26,7 +26,9 @@ class SearchableMovieReviewsContainer extends React.Component{
 
   handleFormSubmit = (event) => {
     event.preventDefault()
+  }
 
+componentDidMount(){
       fetch (NYT_API_URL + this.state.searchTerm)
       .then(response => response.json())
       .then(searchableMovieReviewsData => this.setState({reviews:searchableMovieReviewsData}))
