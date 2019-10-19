@@ -15,8 +15,11 @@ class SearchableMovieReviewsContainer extends React.Component{
     this.state = {
       reviews: []
       searchTerm: []
-    }
+    };
   }
-  
+
+    componentDidMount(){
+      fetch ('https://api.nytimes.com/svc/movies/v2/reviews/all.json?api-key=${NYT_API_KEY}')
+    }
   
 }
