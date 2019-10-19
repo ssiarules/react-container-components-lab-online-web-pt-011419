@@ -13,7 +13,7 @@ class LatestMovieReviewsContainer extends React.Component {
     super()
 
     this.state = {
-      latest-movie-reviews: [ ]
+      latestMovieReviews: [ ]
     };
   }
 
