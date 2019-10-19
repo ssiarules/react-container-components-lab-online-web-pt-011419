@@ -1,6 +1,6 @@
 // Code MovieReviews Here
 import React from 'react';
-import Lates
+
 
 const Review = ({headline, display_title, summary_short}) =>{
   return (
@@ -18,7 +18,7 @@ const Review = ({headline, display_title, summary_short}) =>{
    )
  }
 
- MovieReviews.defualtProps ={
+ MovieReviews.defualtProps = {
    reviews: []
  }
 
