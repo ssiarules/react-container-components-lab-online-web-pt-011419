@@ -28,4 +28,4 @@ class SearchableMovieReviewsContainer extends React.Component{
   }
   }
 
-  export default LatestMovieReviewsContainer
+  export default SearchableMovieReviewsContainer
