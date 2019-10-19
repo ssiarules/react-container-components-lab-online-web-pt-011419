@@ -18,7 +18,7 @@ class LatestMovieReviewsContainer extends React.Component {
   }
 
   componentDidMount() {
-    fetch ()
+    fetch ('https://api.nytimes.com/svc/movies/v2/reviews/all.json?api-key=${NYT_API_KEY}')
   }
 
 
