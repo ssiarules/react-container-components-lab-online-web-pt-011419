@@ -17,3 +17,9 @@ const Review = ({headline, display_title, summary_short}) =>{
       </div>
    )
  }
+
+ MovieReviews.defualtProps ={
+   reviews: []
+ }
+
+ export default MovieReviews
