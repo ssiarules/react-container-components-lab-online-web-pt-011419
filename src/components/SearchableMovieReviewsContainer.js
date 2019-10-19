@@ -18,6 +18,12 @@ class SearchableMovieReviewsContainer extends React.Component{
     };
   }
 
+  handleSearchInputChange = (event) => {
+    this.setState({
+      searchTerm: event.target.value
+    })
+  }
+
     componentDidMount(){
       fetch (URL)
       .then(response => response.json())
