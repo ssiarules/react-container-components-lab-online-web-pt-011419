@@ -23,5 +23,5 @@ class LatestMovieReviewsContainer extends React.Component {
 
 
 
-  
+
 }
