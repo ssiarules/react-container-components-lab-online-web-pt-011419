@@ -32,6 +32,7 @@ class SearchableMovieReviewsContainer extends React.Component{
       fetch (NYT_API_URL + this.state.searchTerm)
       .then(response => response.json())
       .then(searchableMovieReviewsData => this.setState({reviews:searchableMovieReviewsData}))
+      .catch( error => console.error(error) )
   }
   render() {
     return (
