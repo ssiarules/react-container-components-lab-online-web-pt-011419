@@ -36,6 +36,11 @@ class SearchableMovieReviewsContainer extends React.Component{
   render() {
     return (
       <div className="searchable-movie-reviews">
+        <form onSubmit={this.handleFormSubmit}>
+          <input type='text' placeholder='Search' onChange={this.handleSearchInputChange}></input>
+          <button type='submit'>Search</button>
+        </form>
+        <br />
       <MovieReviews   reviews={this.state.reviews} />
       </div>
     )
