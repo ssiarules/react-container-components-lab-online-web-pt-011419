@@ -21,6 +21,7 @@ class LatestMovieReviewsContainer extends React.Component {
     fetch (URL)
       .then(response => response.json())
       .then(latestMovieReviewsData => this.setState({reviews:latestMovieReviewsData.results}))
+      .catch( error => console.error(error) )
   }
 
   render() {
