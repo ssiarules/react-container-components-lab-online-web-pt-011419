@@ -13,18 +13,18 @@ class LatestMovieReviewsContainer extends React.Component {
     super()
 
     this.state = {
-      latestMovieReviews: [ ]
+      reviews: [ ]
     };
   }
 
   componentDidMount() {
     fetch ('https://api.nytimes.com/svc/movies/v2/reviews/all.json?api-key=${NYT_API_KEY}')
       .then(response => response.json())
-      .then(latestMovieReviewsData => this.setState({latestMovieReviews:latestMovieReviewsData}))
+      .then(latestMovieReviewsData => this.setState({reviews:latestMovieReviewsData}))
   }
 
   render() {
-    return <MovieReviews latestMovieReviews={this.state.latestMovieReviews} />
+    return <MovieReviews   reviews={this.state.latestMovieReviews} />
   }
 }
 
