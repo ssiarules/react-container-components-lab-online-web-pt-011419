@@ -14,7 +14,7 @@ class SearchableMovieReviewsContainer extends React.Component{
 
     this.state = {
       reviews: [],
-      searchTerm: ''
+      searchTerm: []
     };
   }
 
