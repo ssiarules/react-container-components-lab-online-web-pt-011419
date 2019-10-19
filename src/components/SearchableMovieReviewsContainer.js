@@ -24,6 +24,10 @@ class SearchableMovieReviewsContainer extends React.Component{
     })
   }
 
+  handleFormSubmit = (event) => {
+    event.preventDefault()
+  }
+
     componentDidMount(){
       fetch (URL)
       .then(response => response.json())
