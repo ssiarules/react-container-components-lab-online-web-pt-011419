@@ -7,6 +7,7 @@ const Review = ({headline, display_title, summary_short}) =>{
     <div key={headline} className='review'>
       <h2>{display_title}</h2>
       <p>{summary_short}</p>
+    </div>
   )
 }
 
